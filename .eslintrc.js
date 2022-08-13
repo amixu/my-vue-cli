@@ -2,7 +2,7 @@
  * @Author: amixu
  * @Date: 2022-08-13 22:05:27
  * @LastEditors: amixu
- * @LastEditTime: 2022-08-13 23:20:56
+ * @LastEditTime: 2022-08-13 23:28:52
  * @Description: eslint配置文件
  */
 module.exports = {
@@ -19,7 +19,7 @@ module.exports = {
   plugins: ['vue'],
   rules: {
     // 1开启警告规则
-    eqeqeq: 1, // 必须使用全等
+    eqeqeq: 2, // 必须使用全等
     complexity: [1, 10], // 复杂圈
     'no-extra-parens': 1, // 非必要的括号
     'no-use-before-define': [1, 'nofunc'], // 除函数以外的参数未定义前不能使用
