@@ -1,0 +1,30 @@
+{
+  "name": "my-vue-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix --ext .js --ext .vue src/",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amixu/my-vue-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amixu/my-vue-cli/issues"
+  },
+  "homepage": "https://github.com/amixu/my-vue-cli#readme",
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
