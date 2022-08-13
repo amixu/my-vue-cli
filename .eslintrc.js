@@ -2,7 +2,7 @@
  * @Author: amixu
  * @Date: 2022-08-13 22:05:27
  * @LastEditors: amixu
- * @LastEditTime: 2022-08-13 23:28:52
+ * @LastEditTime: 2022-08-13 23:30:24
  * @Description: eslint配置文件
  */
 module.exports = {
@@ -19,13 +19,13 @@ module.exports = {
   plugins: ['vue'],
   rules: {
     // 1开启警告规则
+    // 2开启报错规则，之所以全部设置为2，因为husky只有报错才会阻止提交
     eqeqeq: 2, // 必须使用全等
-    complexity: [1, 10], // 复杂圈
-    'no-extra-parens': 1, // 非必要的括号
-    'no-use-before-define': [1, 'nofunc'], // 除函数以外的参数未定义前不能使用
-    'max-len': [1, { code: 100 }], // 行最大长度不能超过100个字符
-    'no-else-return': 1, // 如果if语句里面有return,后面不能跟else语句
-    // 2开启报错规则
+    complexity: [2, 10], // 复杂圈
+    'no-extra-parens': 2, // 非必要的括号
+    'no-use-before-define': [2, 'nofunc'], // 除函数以外的参数未定义前不能使用
+    'max-len': [2, { code: 100 }], // 行最大长度不能超过100个字符
+    'no-else-return': 2, // 如果if语句里面有return,后面不能跟else语句
     'block-scoped-var': 2, // 块语句中使用var
     'consistent-return': 2, // return 后面是省略
     'accessor-pairs': 2, // 在对象中使用getter/setter

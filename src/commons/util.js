@@ -2,7 +2,7 @@
  * @Author: amixu
  * @Date: 2022-08-13 22:39:41
  * @LastEditors: amixu
- * @LastEditTime: 2022-08-13 23:27:23
+ * @LastEditTime: 2022-08-13 23:30:46
  * @Description: 工具函数
  */
 import axios from 'axios';
@@ -30,7 +30,7 @@ export const httpReq = config => {
       response => {
         const res = response.data;
         const { code, result } = res;
-        if (code == 1) {
+        if (code === 1) {
           if (successMsg) {
             console.log(successMsg);
           }
